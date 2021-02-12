@@ -1,6 +1,6 @@
 /*
-Aluno: Alexandre Douglas Leite Bezerra Filho
-Matrícula: 202000012462
+Aluno: Alexandre Douglas
+Matrícula: *********
 Programação Imperativa ~ Turma 01 ~ 2020.1
 PROJETO 01
 */
@@ -47,77 +47,6 @@ int dados_leitura()
 }
 int u;
 //Funções
-int op4()
-{
-    system("cls || clear");
-    printf("\n====================\n");
-    for (i = 0; i < 60; i++)
-    {
-        //Ignorando matriculas removidas ou que não existe
-        if (info[i].matricula > 0)
-        {
-            printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[i].matricula, info[i].nome, info[i].media, info[i].faltas);
-        }
-    }
-}
-int op5()
-{
-
-    system("cls || clear");
-    printf("\n====================\n");
-    printf("Lista de alunos aprovados");
-    printf("\n====================\n");
-    //Verificando se aluno tem Média >=7 e frequencia acima de 60
-    for (i = 0; i < 60; i++)
-    {
-        //Ignorando matriculas que não existem
-        if (info[i].matricula > 0)
-        {
-            if (info[i].media >= 7 && info[i].faltas < 15)
-            {
-                printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[i].matricula, info[i].nome, info[i].media, info[i].faltas);
-            }
-        }
-    }
-}
-int op6()
-{
-    system("cls || clear");
-    printf("\n====================\n");
-    printf("Lista de alunos reprovados por media");
-    printf("\n====================\n");
-    //Verificando se aluno tem Média <7
-    for (i = 0; i < 60; i++)
-    {
-        //Ignorando matriculas que não existem
-        if (info[i].matricula > 0)
-        {
-            if (info[i].media < 7)
-            {
-                printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[i].matricula, info[i].nome, info[i].media, info[i].faltas);
-            }
-        }
-    }
-}
-int op7()
-{
-    system("cls || clear");
-    printf("\n====================\n");
-    printf("Lista de alunos reprovados");
-    printf("\n====================\n");
-    //Verificando se aluno tem frequencia abaixo de 60
-    for (i = 0; i < 60; i++)
-    {
-        //Ignorando matriculas que não existem
-        if (info[i].matricula > 0)
-        {
-            if (info[i].faltas >= 15)
-            {
-                printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[i].matricula, info[i].nome, info[i].media, info[i].faltas);
-            }
-        }
-    }
-}
 //Funções de ordem
 void troca(alunos_dados a[], int pos_max, int pos2)
 {
@@ -500,15 +429,36 @@ int main()
                 break;
             case 2:
                 nomes(info, 60);
-                op4();
+                for (q = 0; q < 60; q++)
+                {
+                    //Ignorando matriculas removidas ou que não existe
+                    if (info[q].matricula > 0)
+                    {
+                        printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[q].matricula, info[q].nome, info[q].media, info[q].faltas);
+                    }
+                }
                 break;
             case 3:
                 media(info, 60);
-                op4();
+                for (q = 0; q < 60; q++)
+                {
+                    //Ignorando matriculas removidas ou que não existe
+                    if (info[q].matricula > 0)
+                    {
+                        printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[q].matricula, info[q].nome, info[q].media, info[q].faltas);
+                    }
+                }
                 break;
             case 4:
                 falta(info, 60);
-                op4();
+                for (q = 0; q < 60; q++)
+                {
+                    //Ignorando matriculas removidas ou que não existe
+                    if (info[q].matricula > 0)
+                    {
+                        printf("\n- N da matricula: %d - Aluno: - %s - Media: %.2f - Faltas: %d  |", info[q].matricula, info[q].nome, info[q].media, info[q].faltas);
+                    }
+                }
                 break;
             default:
                 break;
