@@ -1,7 +1,7 @@
 """
 # Iniciando projeto
-
-# Feito por: Alexandre Douglas / xand.douglas@gmail.com / superb1991@academico.ufs.br
+# Projeto Não pertence a nenhuma lista de atividade
+# Feito por: Alexandre Douglas / ******@gmail.com / *******@academico.ufs.br
 """
 continuar = 1
 alunos = {}
