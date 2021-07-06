@@ -37,7 +37,7 @@ end main_project;
 
 architecture implementar of main_project is
 begin
-	process
+	process(s0,s1,s2,e1,i0,i1,i2,i3,i4,i5,i6,i7)
 	begin
 	if e1 = &apos;1&apos; then
 		if (s2=&apos;0&apos; and s1=&apos;0&apos; and s0=&apos;0&apos;) then
