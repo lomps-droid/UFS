@@ -10,19 +10,19 @@ Para o funcionamento é necessário que a entrada |E1 ( E1 Invertido ) esteja em
 
 
 
-## Simulator:
+## 💻 Simulator:
 
 <img src="https://i.imgur.com/BkzDu9g.png" alt="Simulator Digital" width="640px" height="480px">
 
-### 💻 Importante
+### :exclamation::exclamation: Importante
 A entrada "e1" é fundamental para o funcionamento do sistema, caso ela esteja configurada como Low ( 0 ) , a saída 'Z' vai ser sempre
 Low ( 0 ).
 
 <img src="https://i.imgur.com/B3uJqMM.png" alt="Truth Table">
 
 
-### GTKWave TestBench
-
+### :computer:GTKWave TestBench
+`Click on image for take a zoom`
 <img src="https://i.imgur.com/Fd5giXD.png" alt="TestBench" width="640px" height="480px">
 
 ### ☕ Usando TestBench
