@@ -19,7 +19,6 @@ A entrada "e1" é fundamental para o funcionamento do sistema, caso ela esteja c
 Low ( 0 ).
 
 <img src="https://i.imgur.com/B3uJqMM.png" alt="Truth Table">
-Imagem retirada do TTL Databook
 
 
 ### GTKWave TestBench
