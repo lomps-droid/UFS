@@ -13,7 +13,7 @@ architecture implementar of main_project is
 begin
 	process(s0,s1,s2,e1,i0,i1,i2,i3,i4,i5,i6,i7)
 	begin
-	if e1 = '1' then
+	if not e1 = '0' then
 		if (s2='0' and s1='0' and s0='0') then
 			z <= i0;
 			z_invertido <= not i0;
